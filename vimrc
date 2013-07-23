@@ -4,9 +4,9 @@ set laststatus=2 " Always show the statusline
 syntax enable
 set t_Co=256
 colorscheme inkpot
+colorscheme Tomorrow-Night-Bright
 set background=dark
 colorscheme solarized
-colorscheme Tomorrow-Night-Bright
 set tags=~/project_tags
 filetype plugin on
 filetype plugin indent on
@@ -36,3 +36,23 @@ syntax on
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd BufEnter * lcd %:p:h "Auto change the directory to the current file I'm working on
+
+" toggle between absolute and relative line numbering
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-l> :call NumberToggle()<cr>
+
+" automatically switch to absolute line numbers whenever Vim loses focus
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
+
+" automatically use absolute line numbers when we’re in insert mode and
+" relative numbers when we’re in normal mode
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
