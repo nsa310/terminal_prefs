@@ -3,8 +3,6 @@ set nocompatible " Disable vi-compatibility
 set laststatus=2 " Always show the statusline
 syntax enable
 set t_Co=256
-colorscheme inkpot
-colorscheme Tomorrow-Night-Bright
 set background=dark
 colorscheme solarized
 set tags=~/project_tags
