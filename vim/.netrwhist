@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/nitish/Documents/learn/freeagent_project/app/views/currency'
-let g:netrw_dirhist_2='/Users/nitish/Documents/tripolis/Spikes/MongoDBTest/db'
-let g:netrw_dirhist_3='/Users/nitish/Documents/tripolis/Spikes/MongoDBTest/config'
-let g:netrw_dirhist_4='/Users/nitish/Documents/tripolis/mongo_stress_test/app/models'
-let g:netrw_dirhist_5='/Users/nitish/Documents/tripolis/backend-api/db/seeds/development'
-let g:netrw_dirhist_6='/Users/nitish/Documents/tripolis/backend-api/db/seeds'
