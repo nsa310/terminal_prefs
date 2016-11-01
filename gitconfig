@@ -1,8 +1,25 @@
-[user]
-	name = shardnit
-	email = sharmanitishdutt@gmail.com
 [core]
-	excludesfile = /Users/nitish/.gitignore_global
+repositoryformatversion = 0
+filemode = true
+bare = false
+logallrefupdates = true
+ignorecase = true
+precomposeunicode = true
+
+[user]
+name = Nitish dutt Sharma
+email = sharmanitishdutt@gmail.com
+
+[push]
+default = simple
+
+[branch]
+autosetuprebase = always
+
+[branch "master"]
+remote = origin
+merge = refs/heads/master
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
